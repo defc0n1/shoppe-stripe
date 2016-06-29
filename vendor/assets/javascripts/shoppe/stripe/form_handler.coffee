@@ -19,7 +19,7 @@ $ ->
         $('[data-stripe=token]').val(response['id'])
         #form.get(0).submit()
         $.ajax
-        url: '/checkout/sorder'
+        url: '/checkout/'
         type: 'POST'
         data: form.serialize()
     
