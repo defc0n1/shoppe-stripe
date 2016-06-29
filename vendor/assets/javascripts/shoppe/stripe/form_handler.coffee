@@ -17,11 +17,11 @@ $ ->
         $('input[type=submit]', form).removeClass('disabled').prop('disabled', false)
       else
         $('[data-stripe=token]').val(response['id'])
-        #form.get(0).submit()
-        $.ajax
-        url: '/checkout/'
-        type: 'POST'
-        data: form.serialize()
+        form.get(0).submit()
+        #$.ajax
+        #url: '/checkout/'
+        #type: 'POST'
+        #data: form.serialize()
     
     # Return false to ensure that the form doesn't submit on first click
     false
