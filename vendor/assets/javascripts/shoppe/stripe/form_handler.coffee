@@ -17,7 +17,7 @@ $ ->
         $('input[type=submit]', form).removeClass('disabled').prop('disabled', false)
       else
         $('[data-stripe=token]').val(response['id'])
-        form.get(0).submit()
+        form.get(2).submit()
     
     # Return false to ensure that the form doesn't submit on first click
     false
